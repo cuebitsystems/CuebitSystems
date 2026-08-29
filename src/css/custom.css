@@ -1,0 +1,85 @@
+/* ==========================================================================
+   Cuebit Systems — brand theme (blue → teal/green gradient)
+   ========================================================================== */
+
+:root {
+  --ifm-color-primary: #0EA5A0;
+  --ifm-color-primary-dark: #0C948F;
+  --ifm-color-primary-darker: #0B8B86;
+  --ifm-color-primary-darkest: #09726E;
+  --ifm-color-primary-light: #16B6B0;
+  --ifm-color-primary-lighter: #22BDB7;
+  --ifm-color-primary-lightest: #4BCBC6;
+
+  --cuebit-gradient: linear-gradient(135deg, #2563EB 0%, #0EA5A0 55%, #10B981 100%);
+  --cuebit-gradient-soft: linear-gradient(135deg, rgba(37,99,235,0.10) 0%, rgba(14,165,160,0.10) 55%, rgba(16,185,129,0.10) 100%);
+
+  --ifm-code-font-size: 95%;
+  --ifm-navbar-height: 64px;
+  --ifm-heading-font-weight: 700;
+}
+
+[data-theme='dark'] {
+  --ifm-color-primary: #2DD4BF;
+  --ifm-color-primary-dark: #14C4AD;
+  --ifm-color-primary-darker: #12B8A2;
+  --ifm-color-primary-darkest: #0F9885;
+  --ifm-color-primary-light: #46D9C6;
+  --ifm-color-primary-lighter: #52DCCA;
+  --ifm-color-primary-lightest: #7BE4D6;
+
+  --ifm-background-color: #0B1220;
+  --ifm-navbar-background-color: #0B1220;
+  --ifm-footer-background-color: #070C16;
+  --cuebit-gradient-soft: linear-gradient(135deg, rgba(37,99,235,0.14) 0%, rgba(14,165,160,0.14) 55%, rgba(16,185,129,0.14) 100%);
+}
+
+.navbar {
+  box-shadow: 0 1px 0 0 var(--ifm-toc-border-color);
+  backdrop-filter: saturate(180%) blur(6px);
+}
+
+.navbar__logo {
+  height: 2rem;
+}
+
+.navbar__item {
+  font-weight: 600;
+  border-radius: 8px;
+}
+
+.navbar__link--active {
+  color: var(--ifm-color-primary);
+}
+
+.menu__link--active,
+.menu__link--sublist-caret:hover {
+  color: var(--ifm-color-primary);
+}
+
+.footer {
+  --ifm-footer-color: rgba(255, 255, 255, 0.65);
+}
+
+/* subtle card/table polish used across doc pages */
+table {
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.markdown > h2 {
+  border-bottom: 1px solid var(--ifm-toc-border-color);
+  padding-bottom: 0.4rem;
+}
+
+.badge--coming-soon {
+  display: inline-block;
+  font-size: 0.75rem;
+  font-weight: 700;
+  letter-spacing: 0.02em;
+  text-transform: uppercase;
+  padding: 0.2rem 0.6rem;
+  border-radius: 999px;
+  background: var(--cuebit-gradient);
+  color: white;
+}
